@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { WeatherService } from '../weather-data/weather.service';
-import { CountriesService } from '../weather-data/countries-service';
+import { CountriesService } from './countries.service';
 import { formatDate } from '@angular/common';
 import { Country } from '../interfaces/Country';
 import { CurrentWeather } from '../interfaces/CurrentWeather';
