@@ -1,0 +1,51 @@
+<h1>{{title}}</h1>
+
+<div id="horizontal">
+
+  <input type="text"
+          placeholder="Enter a city"
+          [(ngModel)]="city"
+          class="city-input"/>
+
+  <select
+      [(ngModel)]="country"
+      class="country-selection"
+    >
+    <option>
+      Select a country
+    </option>
+    <option *ngFor="let c of countries">
+      {{c.country}}
+    </option>
+  </select>
+
+  <select
+    [(ngModel)]="weather"
+    class="weather-selection"
+  >
+    <option>
+      Display current weather
+    </option>
+    <option>
+      Display weather forecast
+    </option>
+  </select>
+
+  <button
+    #weatherDataBtn
+    type="button"
+    id="get-weather-data-button"
+    (click)="fetchWeatherData()">
+    Get Weather Data
+  </button>
+
+  <p name="noDataFound"
+     [hidden]="noDataFound === ''"
+     id="no-data-found">{{noDataFound}}</p>
+
+  <app-current-weather
+    *ngIf="showCurrentWeather === true"
+    [currentWeather]="currentWeather"
+    [dateString]="dateString">
+  </app-current-weather> 
+</div>
