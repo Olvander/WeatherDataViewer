@@ -7,12 +7,14 @@ import { WeatherService } from './weather-data/weather.service';
 import { CountriesService } from './weather-data/countries.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CurrentWeatherComponent } from './current-weather/current-weather.component';
+import { WeatherForecastComponent } from './weather-forecast/weather-forecast.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherDataComponent,
-    CurrentWeatherComponent
+    CurrentWeatherComponent,
+    WeatherForecastComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule
