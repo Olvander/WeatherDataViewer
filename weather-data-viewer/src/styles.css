@@ -1,6 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-  background-image: linear-gradient(#50c8f0, #0d617e);
   height: 100vh;
+  height: auto !important;
+  background: linear-gradient(#50c8f0, #0d617e) fixed;
+}
+
+html {
+  height: 100vh;
+  height: auto !important;
+}
+
+#wrapper {
+  min-height: 92vh;
+  height: auto !important;
+  height: 92vh;
+  margin: 0 auto 0;
+}
+
+#link-wrapper {
+  height: 8vh;
+  text-align: center;
+  vertical-align: top;
+}
+
+#centered-link {
+  margin-top: 15px;
+  color: gold;
+  cursor: pointer;
+  height: auto;
+  font-family: Calibri, sans-serif;
+  font-size: 18px;
 }

@@ -19,7 +19,7 @@ export class CurrentWeatherComponent implements OnInit, OnChanges {
   ngOnInit(): void {
   }
 
-  ngOnChanges() : void {
+  ngOnChanges(): void {
     this.temperatureText = this.currentWeather.temperature > 0 ? '+' + this.currentWeather.temperature :
       this.currentWeather.temperature;
     this.weatherIconPath = `http://openweathermap.org/img/wn/${this.currentWeather.weatherIcon}@2x.png`;

@@ -8,16 +8,21 @@ import { CountriesService } from './weather-data/countries.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CurrentWeatherComponent } from './current-weather/current-weather.component';
 import { WeatherForecastComponent } from './weather-forecast/weather-forecast.component';
+import { LineChartComponent } from './line-chart/line-chart.component';
+import { LineChartsComponent } from './line-charts/line-charts.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherDataComponent,
     CurrentWeatherComponent,
-    WeatherForecastComponent
+    WeatherForecastComponent,
+    LineChartComponent,
+    LineChartsComponent
   ],
   imports: [
-    BrowserModule, FormsModule, HttpClientModule
+    BrowserModule, FormsModule, HttpClientModule, ChartsModule
   ],
   providers: [WeatherService, CountriesService],
   bootstrap: [AppComponent]

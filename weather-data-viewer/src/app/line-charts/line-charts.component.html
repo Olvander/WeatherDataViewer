@@ -1,0 +1,7 @@
+<div id="weather-data" *ngIf="dataArePresent">
+  <app-line-chart *ngFor="let weatherData of weatherDataArray; let idx = index"
+                  [weatherData]="weatherData"
+                  [maxTemp]="maxTemp"
+                  [minTemp]="minTemp">
+  </app-line-chart>
+</div>

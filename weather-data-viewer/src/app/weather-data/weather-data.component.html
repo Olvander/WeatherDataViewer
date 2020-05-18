@@ -44,8 +44,14 @@
      id="no-data-found">{{noDataFound}}</p>
 
   <app-current-weather
-    *ngIf="showCurrentWeather === true"
+    *ngIf="showCurrentWeather"
     [currentWeather]="currentWeather"
     [dateString]="dateString">
-  </app-current-weather> 
+  </app-current-weather>
+  
+  <app-weather-forecast
+    *ngIf="showWeatherForecast"
+    [forecast]="forecast">
+  </app-weather-forecast>
+  
 </div>

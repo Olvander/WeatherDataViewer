@@ -1,1 +1,6 @@
-<p>weather-forecast works!</p>
+<div id="city">{{forecast.city}}</div>
+<app-line-charts
+  [weatherDataArray]="forecast.forecast"
+  [minTemp]="forecast.minTemp"
+  [maxTemp]="forecast.maxTemp">
+</app-line-charts>
